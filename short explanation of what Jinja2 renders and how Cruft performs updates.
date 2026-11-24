@@ -1,0 +1,6 @@
+Jinja2 remplace les variables {{ cookiecutter.xxx }} définies dans cookiecutter.json, 
+dans les noms de dossiers comme dans le contenu des fichiers : nom du projet, nom du package, auteur, email, 
+version de Python et version du projet.
+Cruft enregistre dans .cruft.json l'URL du template et le commit utilisé à la génération. cruft check compare 
+ce commit au dernier commit du template. cruft update regénère le projet aux deux versions, calcule la différence 
+entre elles et l'applique comme un patch Git sur le projet, puis met à jour le commit dans .cruft.json.
